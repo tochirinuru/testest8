@@ -33,3 +33,6 @@ map.addControl(new maplibregl.ScaleControl());
 
 // ズームバーの表示
 map.addControl(new maplibregl.NavigationControl());
+
+// フルスクリーンボタンの表示
+map.addControl(new maplibregl.FullscreenControl());
