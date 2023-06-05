@@ -1,7 +1,10 @@
-var map =  new maplibregl.Map({
-    container: 'map',
-    style: 'https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json', // ’n}‚ÌƒXƒ^ƒCƒ‹
-    center: [139.8108103, 35.7100069], // ’†SÀ•W
-    zoom: 16, // ƒY[ƒ€ƒŒƒxƒ‹
-    pitch: 0 // ŒX‚«
-})
+//åœ°å›³1ï¼ˆåœ°ç†é™¢ã‚¿ã‚¤ãƒ« æ·¡è‰²åœ°å›³ï¼‰ã®è¨­å®š
+var map = new maplibregl.Map({
+	container: 'map',
+	style: 'https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',
+	center:[35.68, 139.76],
+	zoom: 13
+	minZoom: 4
+	mazZoom: 17
+	attribution: "Produced by ã¨ã¡ã‚Šã¬ã‚‹. Data provided by å›½åœŸæ•°å€¤æƒ…å ±. Map tiles by åœ°ç†é™¢ã‚¿ã‚¤ãƒ«"
+});
