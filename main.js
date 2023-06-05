@@ -16,7 +16,7 @@ var map = new maplibregl.Map({
 		},
 		layers: [
 			{
-				id: 'raster-tiles',
+				id: 'rtile',
 				type: 'raster',
 				source: 'rtile',
 				minzoom: 4,
