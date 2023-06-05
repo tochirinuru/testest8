@@ -1,10 +1,7 @@
-//地図1（地理院タイル 淡色地図）の設定
-var map = new maplibregl.Map({
+var map =  new maplibregl.Map({
 	container: 'map',
-	style: 'https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',
-	center:[35.68, 139.76],
-	zoom: 13
-	minZoom: 4
-	mazZoom: 17
-	attribution: "Produced by とちりぬる. Data provided by 国土数値情報. Map tiles by 地理院タイル"
-});
+	style: 'https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json', // 地図のスタイル
+	center: [139.8108103, 35.7100069], // 中心座標
+	zoom: 16, // ズームレベル
+	pitch: 0 // 傾き
+})
