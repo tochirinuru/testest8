@@ -1,7 +1,7 @@
 var map =  new maplibregl.Map({
-    container: 'map',
-    style: 'https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json', // ’n}‚ÌƒXƒ^ƒCƒ‹
-    center: [139.8108103, 35.7100069], // ’†SÀ•W
-    zoom: 16, // ƒY[ƒ€ƒŒƒxƒ‹
-    pitch: 0 // ŒX‚«
+	container: 'map',
+	style: 'https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json', // åœ°å›³ã®ã‚¹ã‚¿ã‚¤ãƒ«
+	center: [139.8108103, 35.7100069], // ä¸­å¿ƒåº§æ¨™
+	zoom: 16, // ã‚ºãƒ¼ãƒ ãƒ¬ãƒ™ãƒ«
+	pitch: 0 // å‚¾ã
 })
