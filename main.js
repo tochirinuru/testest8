@@ -26,7 +26,7 @@ var map = new maplibregl.Map({
 	},
 	center: [139.68786, 35.68355],
 	zoom: 6,
-})
+});
 
 // スケールバーの表示
 map.addControl(new maplibregl.ScaleControl());
