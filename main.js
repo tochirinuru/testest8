@@ -1,10 +1,29 @@
 //地図1（地理院タイル 淡色地図）の設定
 var map = new maplibregl.Map({
 	container: 'map',
-	style: 'https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',
-	center:[139.76, 35.68],
-	zoom: 13
-	minZoom: 4
-	mazZoom: 17
-	attribution: "Produced by とちりぬる. Data provided by 国土数値情報. Map tiles by 地理院タイル"
+	style: {
+		version: 8,
+		sources: {
+			rtile: {
+				type: 'raster',
+				tiles: [
+					'https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',
+				],
+				tileSize: 256,
+				attribution:
+					"Produced by <a href='https://twitter.com/tochirinuru' target='_blank'>とちりぬる</a>. Map tiles by <a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>",
+			},
+		},
+		layers: [
+			{
+				id: 'raster-tiles',
+				type: 'raster',
+				source: 'rtile',
+				minzoom: 4,
+				maxzoom: 18,
+			},
+		],
+	},
+	center: [139.68786, 35.68355],
+	zoom: 6,
 })
